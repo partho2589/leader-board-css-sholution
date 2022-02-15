@@ -17,12 +17,17 @@ const topPlayer =  document.getElementById('top-player-titel');
 
  //change number of button click 
 
- document.getElementById('changeN-button').addEventListener('click', 
+ let button =  document.getElementById('changeN-button').addEventListener('click', 
  function(){
-     const numberInput = document.getElementById('number-input');
-     const valu = parseFloat (numberInput.value) ;
-     numberInput.value = valu + 1;
+    const numberInput = document.getElementById('number-input');
+    const valu = parseFloat (numberInput.value) ;
+    if (valu <5 ){
+        numberInput.value = valu + 1;
+       
+    }
+    
  })
  
+
  
  
